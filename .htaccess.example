@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{HTTPS} !on
+RewriteCond %{SERVER_PORT} !^443$
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://grandsmeta03.ru/$1 [R=301,NE,L]
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ https://grandsmeta03.ru/$1 [R=301,NE,L]

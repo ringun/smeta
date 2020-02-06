@@ -45,12 +45,18 @@ $(document).ready(function(){
 
 	});
 
-	$('.modal__close').on('click', function(){
+	$('.modal__close').on('click', function(e){
+		e.preventDefault();
 		closeModal();
 	});
 
 	$('.btn-ok').on('click', function(){
 		closeModalSuccess();
+	});
+
+	$('.order-btn').on('click', function(e){
+		e.preventDefault();
+		openModal();
 	});
 
 	$('.callback-header').on('click', function(e){

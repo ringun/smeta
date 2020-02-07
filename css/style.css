@@ -16,6 +16,7 @@ a, a:active, a:focus {
   color: #000; }
 
 body {
+  min-width: 1100px;
   background: #fff;
   font-family: 'PT Sans'; }
 
@@ -355,7 +356,8 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-  background: rgba(38, 72, 123, 0.92); }
+  background: rgba(38, 72, 123, 0.92);
+  overflow-y: scroll; }
   .modal-wrapper .modal-success {
     display: none;
     position: relative;
@@ -432,3 +434,69 @@ body {
     .modal-wrapper .modal__confident {
       color: #a5a5a5;
       font-size: 14px; }
+
+@media only screen and (max-width: 400px) {
+  body {
+    min-width: auto; }
+  .header__list {
+    display: none; }
+  .wrapper-info {
+    position: relative;
+    text-align: center; }
+    .wrapper-info .phone {
+      font-size: 21px;
+      margin: 10px 10px;
+      display: inline-block; }
+    .wrapper-info .callback-wrapper {
+      display: none; }
+  .prices {
+    padding-bottom: 20px; }
+  .container .pre-title {
+    margin-top: 10px; }
+  .logo-wrapper {
+    text-align: center; }
+    .logo-wrapper__logo {
+      max-width: 200px;
+      display: block;
+      margin: 10px auto 0; }
+      .logo-wrapper__logo a img {
+        width: 100%; }
+  .content .first-list {
+    height: 260px;
+    background: url(/img/bg.jpg) center center;
+    background-attachment: fixed;
+    background-size: cover; }
+    .content .first-list__main-title {
+      margin-top: 80px;
+      font-size: 40px; }
+    .content .first-list__sub-title {
+      font-size: 18px; }
+  .about-block-info__main-block {
+    background: url(/img/prof.png) center;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    background-size: 130px;
+    padding: 200px 20px 30px 20px; }
+  .about-block-info__content {
+    font-size: 13px; }
+  .middle-container {
+    margin: 10px 0 50px;
+    background: url(/img/bg.jpg) center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .middle-container .support {
+      margin-top: 70px; }
+  .programm-features__list {
+    padding: 0 20px; }
+    .programm-features__list li {
+      font-size: 12px; }
+  .questions {
+    margin: 30px 0 50px; }
+    .questions h4 {
+      font-size: 25px; }
+    .questions p {
+      font-size: 35px; }
+  .footer {
+    box-sizing: border-box;
+    padding: 20px 30px; } }

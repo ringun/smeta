@@ -25,6 +25,7 @@ a, a:active, a:focus{
 }
 
 body{
+	min-width: 1100px;
 	background: #fff;
 	font-family: 'PT Sans';
 }
@@ -273,7 +274,6 @@ body{
 	background-position-y: -167px;
     background-size: cover;
     background-repeat: no-repeat;
-    // background: linear-gradient(45deg, #2c5eb8 0%, #1b2a4e 50%, #0f1531 100%);
     padding: 20px 0;
     color: #fff;
     text-align: center;
@@ -459,6 +459,7 @@ body{
 	height: 100%;
 	background: rgba(0,0,0,.7);
 	background: rgba(38, 72, 123, 0.92);
+	overflow-y: scroll;
 
 	.modal-success{
 		display: none;
@@ -556,5 +557,130 @@ body{
 			color: #a5a5a5;
 			font-size: 14px;
 		}
+	}
+}
+
+@media only screen and (max-width: 400px)  {
+	body{
+		min-width: auto;
+	}
+
+	.header{
+		&__list{
+			display: none;
+		}
+	}
+
+	.wrapper-info{
+		position: relative;
+		text-align: center;
+
+		.phone{
+			font-size: 21px;
+		    // font-weight: 800;
+		    margin: 10px 10px;
+		    display: inline-block;
+		    // vertical-align: middle;
+		}
+
+		.callback-wrapper{
+			display: none;
+		}
+	}
+
+	.prices{
+		padding-bottom: 20px;
+	}
+
+	.container{
+		.pre-title{
+			margin-top: 10px;
+		}
+	}
+
+	.logo-wrapper{
+		text-align: center;
+		&__logo{
+			max-width: 200px;
+			display: block;
+			margin: 10px auto 0;
+
+			a img{
+				width: 100%;
+			}
+		}
+	}
+
+	.content {
+		.first-list{
+			height: 260px;
+
+		    background: url(/img/bg.jpg) center center;
+			background-attachment: fixed;
+		    background-size: cover;
+		    // background-repeat: no-repeat;
+
+			&__main-title{
+				margin-top: 80px;
+				font-size: 40px;
+			}
+
+			&__sub-title{
+				font-size: 18px;
+			}
+		}
+	}
+
+	.about-block-info{
+		&__main-block{
+			background: url(/img/prof.png) center;
+			background-repeat: no-repeat;
+			background-position: center 0px;
+    		background-size: 130px;
+			padding: 200px 20px 30px 20px;
+		}
+
+		&__content{
+			font-size: 13px;
+		}
+	}
+
+	.middle-container{
+		margin: 10px 0 50px;
+		background: url(/img/bg.jpg) center center;
+	    background-attachment: fixed;
+	    // background-position-y: -167px;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+
+	    .support{
+	    	margin-top: 70px;
+	    }
+	}
+
+	.programm-features{
+
+		&__list{
+			padding: 0 20px;
+
+			li{
+				font-size: 12px;
+			}
+		}
+	}
+
+	.questions{
+		margin: 30px 0 50px;
+		h4{
+			font-size: 25px;
+		}
+		p{
+			font-size: 35px;
+		}
+	}
+
+	.footer{
+		box-sizing: border-box;
+		padding: 20px 30px;
 	}
 }

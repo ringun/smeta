@@ -2,6 +2,9 @@
 require_once __DIR__ . '/phpMailer/PHPMailer.php';
 $config = require_once __DIR__ . '/config.php';
 
+if(!isset($_POST['name']) or !isset($_POST['phone']))
+    return;
+
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 

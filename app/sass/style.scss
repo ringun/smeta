@@ -171,10 +171,24 @@ body{
 		text-transform: uppercase;
 		font-weight: 800;
 		padding: 10px 20px;
+		padding-right: 53px;
 		background: $blue;
+		background-image: url('../img/call.svg');
+		background-size: 20px;
+    	background-repeat: no-repeat;
+    	background-position: 91%;
 		color: #fff;
 		border-radius: 3px;
+		transition: 1s ease;
 	}
+
+	.callback-header.active{
+		transform: scale(1.1);
+	}
+
+    .callback-header:hover{
+		transform: scale(1.1);
+    }
 }
 
 .content{
@@ -331,6 +345,11 @@ body{
 	    color: #fff;
 	    border-radius: 3px;
 	    box-shadow: inset 0 -2px 0px rgba(0,0,0,.2);
+	    transition: 0.2s ease;
+    }
+
+    .order-btn:hover{
+		transform: scale(1.2);
     }
 }
 
@@ -400,6 +419,10 @@ body{
 		font-weight: 600;
 		margin-top: 12px;
 		font-size: 50px;
+
+		a{
+			color: inherit;
+		}
 	}
 }
 

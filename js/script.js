@@ -41,6 +41,15 @@ var sendData = function(data){
 
 
 $(document).ready(function(){
+
+	setInterval(function(){
+		if($('.callback-header').hasClass('active')){
+			$('.callback-header').removeClass('active');
+		} else {
+			$('.callback-header').addClass('active');
+		}
+	}, 1000);
+
 	$('.header__item').on('click', function(){
 
 	});

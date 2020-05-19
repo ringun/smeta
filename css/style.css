@@ -167,6 +167,12 @@ body {
       margin: 20px 0 0;
       font-size: 30px;
       font-weight: 100; }
+    .content .first-list__owner-title {
+      text-align: center;
+      margin-top: 20px;
+      color: #fff;
+      font-size: 28px;
+      font-weight: 500; }
   .content .first-list:after {
     content: '';
     position: absolute;

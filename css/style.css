@@ -146,7 +146,7 @@ body {
   .content .first-list {
     font-family: 'Gotham Pro';
     position: relative;
-    height: 400px;
+    height: 430px;
     background: url(/img/bg.jpg) center center;
     background-attachment: fixed;
     background-position-y: -167px;
@@ -486,6 +486,12 @@ body {
       font-size: 40px; }
     .content .first-list__sub-title {
       font-size: 18px; }
+    .content .first-list__owner-title {
+      text-align: center;
+      margin-top: 20px;
+      color: #fff;
+      font-size: 28px;
+      font-weight: 500; }
   .about-block-info__main-block {
     background: url(/img/prof.png) center;
     background-repeat: no-repeat;

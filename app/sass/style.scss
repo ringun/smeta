@@ -73,6 +73,16 @@ body{
 		margin: 0 20px;
 	}
 
+	&__item.active:after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: $blue;
+		height: 3px;	
+	}
+
 	&__item a{
 		font-size: 13px;
 		display: block;
@@ -338,7 +348,7 @@ body{
     width: 300px;
     border-radius: 10px;
     margin: 10px 1%;
-    padding: 20px 30px;
+    padding: 20px 23px;
     box-shadow: 0 0 18px -4px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 
@@ -721,4 +731,72 @@ body{
 		box-sizing: border-box;
 		padding: 20px 30px;
 	}
+}
+
+.price-table{
+	&__content{
+		padding-top: 107px;
+
+	}
+}
+
+#pricetab{
+	max-width: 1070px;
+	margin: 0 auto;
+}
+
+table#pricetab thead th{
+	border: 1px solid rgba(206, 216, 224, 1) !important;
+	padding: 12px;
+}
+
+table.shop-table tr td{
+	border: 1px solid rgba(206, 216, 224, 1) !important;
+	border: 1px solid #ced8e0 !important;
+    padding: 12px;
+}
+
+table{
+	max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.text-center{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.price-title{
+	margin: 0;
+}
+
+.price-subtitle{
+	margin: 0;
+}
+
+.info{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.info p{
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.price-date{
+	margin-top: 20px;
+}
+
+table.shop-table tr th {
+    border: 1px solid #ced8e0 !important;
+    border: 1px solid #ced8e0 !important;
+    background: #eee;
+    padding: 12px;
+}
+
+.shop-table{
+	margin-top: 20px;
 }

@@ -29,7 +29,7 @@ $mail->SMTPOptions = array(
 );
 $mail->CharSet = 'UTF-8';
 $mail->SMTPSecure = 'tls';
-$mail->Host       = "ssl://smtp.yandex.ru"; // SMTP server example
+$mail->Host       = "ssl://smtp.gmail.com"; // SMTP server example
 $mail->SMTPDebug  = 0;                     // enables SMTP debug information (for testing)
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->Port       = 465;                    // set the SMTP port for the GMAIL server
@@ -41,10 +41,12 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'Обратный звонок с сайта';
 $mail->Body    = "Имя: $name<br>Телефон: $phone";
 
-$mail->SetFrom($config['smtp']['email'], 'GRANDSMETA03.RU');
+$mail->SetFrom($config['smtp']['email'], 'grandsmeta03.ru');
 
 foreach($config['recipients'] as $recipient)
     $mail->addAddress($recipient['email'], $recipient['name']);
+
+
 
 try{
     if($mail->send())

@@ -8,7 +8,7 @@ $config = require_once __DIR__ . '/config.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 
-if(count($name) > 100 or count($phone) > 100) {
+if(strlen($name) > 100 or strlen($phone) > 100) {
     echo 0;
     return;
 }

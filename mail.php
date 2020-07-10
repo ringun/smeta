@@ -41,7 +41,7 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'Обратный звонок с сайта';
 $mail->Body    = "Имя: $name<br>Телефон: $phone";
 
-$mail->SetFrom('grandsmeta03g@yandex.ru', 'GRANDSMETA03.RU');
+$mail->SetFrom($config['smtp']['email'], 'GRANDSMETA03.RU');
 
 foreach($config['recipients'] as $recipient)
     $mail->addAddress($recipient['email'], $recipient['name']);

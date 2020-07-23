@@ -29,8 +29,8 @@ $mail->SMTPOptions = array(
 );
 $mail->CharSet = 'UTF-8';
 $mail->SMTPSecure = 'tls';
-$mail->Host       = "ssl://smtp.gmail.com"; // SMTP server example
-$mail->SMTPDebug  = 0;                     // enables SMTP debug information (for testing)
+$mail->Host       = "ssl://smtp.yandex.ru"; // SMTP server example
+$mail->SMTPDebug  = 1;                     // enables SMTP debug information (for testing)
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->Port       = 465;                    // set the SMTP port for the GMAIL server
 $mail->Username   = $config['smtp']['email']; // SMTP account username example
